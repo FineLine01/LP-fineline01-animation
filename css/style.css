@@ -28,7 +28,7 @@ body {
   box-sizing: border-box;
   width: 100px;
   height: 1000px;
-  transform: translateX(385px);
+  transform: translateX(310px);
   opacity: 0.4;
   box-shadow: 0 0 20px 20px rgb(255, 255, 255);
 }
@@ -36,9 +36,9 @@ body {
 .fine h1 {
   position: relative;
   top: -330px;
-  left: -360px;
-  font-size: 4em;
-  letter-spacing: 15px;
+  left: -415px;
+  font-size: 6em;
+  letter-spacing: 40px;
   color: rgb(106, 19, 19);
   text-transform: uppercase;
   width: 900px;
@@ -66,7 +66,7 @@ body {
 .all {
   display: flex;
   transition: all 0.1ms ease-out;
-  transform: translate(-1100px, -50px);
+  transform: translate(-1125px, -50px);
 }
       
 .all:hover {
@@ -95,7 +95,7 @@ body {
   width: 100%;
   height: 100%;
   background-color: #3c0101;
-  border-radius: 10px;
+  border-radius: 3px;
   text-shadow: 0 0 10px #3c0101;
   display: flex;
   justify-content: center;
@@ -108,21 +108,20 @@ body {
 .lefter,
 .right,
 .righter {
-  width: 110px;
-  height: 110px;
-  border-radius: 10px;
-  border: 1px solid #fff;
-  box-shadow: 0 0 20px 5px rgb(106, 19, 19);
+  width: 95px;
+  height: 95px;
+  border-radius: 3px;
+  box-shadow: 0 0 20px 5px #6a1313;
   opacity: 0;
   transition: all 0.3s ease;
   position: relative;
   transition-delay: 0s;
   background-position: center center;
-  background-size: contain;
+  background-size: 75px;
   background-repeat: no-repeat;
+  background-blend-mode:soft-light;
   background-color: #e1b6b6;
   cursor: pointer;
-  background-blend-mode: color-burn;
 }
 
 .center:hover,
@@ -131,7 +130,8 @@ body {
 .righter:hover,
 .left:hover{
   box-shadow: 0 0 30px 10px rgb(106, 19, 19);
-  background-color: #ae4a4ab7;
+  background-color: #ae4a4a;
+  background-blend-mode:hard-light;
 }
 
 .text {
@@ -141,7 +141,7 @@ body {
   left: 5px;
   position: absolute;
   color: #fff;
-  font-size: 30px;
+  font-size: 22px;
   text-shadow: 0 0 15px #3c0101;
   animation: neon1 1s ease-in-out infinite;
 }
